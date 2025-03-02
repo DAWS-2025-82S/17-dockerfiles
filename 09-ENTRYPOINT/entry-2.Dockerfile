@@ -13,3 +13,9 @@ ENTRYPOINT ["ping"]
 # for best results we can use CMD and ENTRYPOINT together.
 # We can mention command in ENTRYPOINT, default options/inputs can be supplied through CMD. User can always override default options.
 # Only one CMD and one ENTRYPOINT should be used in Dockerfile
+
+# CMD ["ping","google.com"]
+# ENTRYPOINT ["ping","facebook.com"]
+
+# CMD command will append to ENTRYPOINT command and this will fail
+# use the CMD and ENTRYPOINT combination properly
