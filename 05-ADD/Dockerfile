@@ -5,3 +5,7 @@ ADD https://raw.githubusercontent.com/DAWS-82S/dockerfiles/refs/heads/main/RUN/D
 RUN chmod +r /usr/share/nginx/html/index.html
 ADD sample-1.tar /tmp/
 CMD ["nginx", "-g", "daemon off;"]
+
+# docker build -t add:1.0.0 .
+# docker run -d -p 8080:80 add:1.0.0
+# docker ps
